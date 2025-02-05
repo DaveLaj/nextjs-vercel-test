@@ -12,13 +12,13 @@ async function getBlog(slug: string): Promise<string> {
 }
 
 interface BlogDetailsProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>
 }
 
 const BlogDetails: React.FC<BlogDetailsProps> = async ({ params }) => {
-  const { slug } = params;
+  const { slug } = await params;
   const blog = await getBlog(slug);
 
   return (
