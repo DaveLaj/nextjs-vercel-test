@@ -1,7 +1,9 @@
 "use client";
-
 import React from "react";
-import Lottie, { LottieComponentProps } from "lottie-react";
+import { LottieComponentProps } from "lottie-react";
+import dynamic from 'next/dynamic'
+
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 interface AnimationLottieProps {
   animationPath: object; // or a specific type for your animation data
