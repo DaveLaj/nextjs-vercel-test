@@ -9,6 +9,6 @@ export const experiences = [
     id: 2,
     title: "Technical Support",
     company: "ITDepot Inc.",
-    duration: "(March 2023 - June 2024)"
+    duration: "(March 2023 - June 2023)"
   },
 ]
